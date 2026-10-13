@@ -87,32 +87,44 @@ Box(modifier = Modifier.fillMaxSize(),
             val intent = Intent(context, Exercise1Activity::class.java)
             context.startActivity(intent)
         }) {
-            Text(text = "Exercise 1")
+            Text(text = "Exercise 1",
+                modifier = Modifier.padding(horizontal = 15.dp, vertical = 8.dp),
+                fontWeight = FontWeight.Bold,
+                fontSize = 30.sp)
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(40.dp))
 
         Button(onClick = {
             val intent = Intent(context, Exercise2Activity::class.java)
             context.startActivity(intent)
         }) {
-            Text(text = "Exercise 2")
+            Text(text = "Exercise 2",
+                modifier = Modifier.padding(horizontal = 15.dp, vertical = 8.dp),
+                fontWeight = FontWeight.Bold,
+                fontSize = 30.sp)
         }
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(40.dp))
 
         Button(onClick = {
             val intent = Intent(context, Exercise3Activity::class.java)
             context.startActivity(intent)
         }) {
-            Text(text = "Exercise 3")
+            Text(text = "Exercise 3",
+                modifier = Modifier.padding(horizontal = 15.dp, vertical = 8.dp),
+                fontWeight = FontWeight.Bold,
+                fontSize = 30.sp)
         }
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(40.dp))
 
         Button(onClick = {
             val intent = Intent(context, SummaryActivity::class.java)
             context.startActivity(intent)
         }) {
-            Text(text = "SummaryActivity")
+            Text(text = "SummaryActivity",
+                modifier = Modifier.padding(horizontal = 15.dp, vertical = 8.dp),
+                fontWeight = FontWeight.Bold,
+                fontSize = 30.sp)
         }
     }
 }

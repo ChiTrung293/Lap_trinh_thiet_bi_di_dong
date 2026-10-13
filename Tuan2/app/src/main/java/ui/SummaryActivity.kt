@@ -81,7 +81,6 @@ class SummaryActivity : ComponentActivity() {
         }
         return count
     }
-
     fun GetTopStudent(students: List<Student>): Student? {
         return students.maxByOrNull { it.Score ?: 0.0 }
     }
@@ -296,7 +295,6 @@ class SummaryActivity : ComponentActivity() {
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(vertical = 6.dp)                        ,
-                        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
                     ) {
                         Row(
                             modifier = Modifier.padding(10.dp),
